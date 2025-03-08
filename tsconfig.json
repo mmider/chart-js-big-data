@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // Enable latest features
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleDetection": "force",
+    // "allowJs": true, // I don't think I'll need it
+    //
+    // Bundler mode
+    "moduleResolution": "NodeNext",
+    // "allowImportingTsExtensions": true, // might break outside of Bun
+    "verbatimModuleSyntax": true,
+    // "noEmit": true,
+    "outDir": "dist",
+
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    // "emitDeclarationOnly": false,
+
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Some stricter flags (disabled by default)
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noPropertyAccessFromIndexSignature": false
+  },
+  "include": ["src", "src/types/**/*.d.ts"]
+}
